@@ -15,14 +15,12 @@ public class Main {
         System.out.print("Name: ");
         firstName = scanner.next();
         while(wordCheck.StringIsValid(firstName)==false) {
-            System.out.println("Information incorrect, please use only letters!");
             System.out.print("Name: ");
             firstName = scanner.next();
         }
         System.out.print("Surname: ");
         surname = scanner.next();
         while(wordCheck.StringIsValid(surname)==false) {
-            System.out.println("Information incorrect, please use only letters!");
             System.out.print("Surname: ");
             surname = scanner.next();
         }
@@ -34,10 +32,22 @@ public class Main {
         }
         System.out.print("NIP number: ");
         NIP = scanner.next();
+        while(wordCheck.NipIsValid(NIP)==false) {
+            System.out.print("NIP number: ");
+            NIP = scanner.next();
+        }
         System.out.print("Bank Account: ");
         bankAccountNumber = scanner.next();
+        while(wordCheck.BankAccIsValid(bankAccountNumber)==false) {
+            System.out.print("Bank Account: ");
+            bankAccountNumber = scanner.next();
+        }
         System.out.print("Gender: ");
         gender = scanner.next();
+        while(wordCheck.MaleIsValid(gender) == false) {
+            System.out.println("Gender: ");
+            gender = scanner.next();
+        }
 
     }
 }
