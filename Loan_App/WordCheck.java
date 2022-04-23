@@ -50,7 +50,6 @@ public class WordCheck {
                 int sum = 0;
                 for(int i=0; i<9; i++) {
                     int cont_num = Integer.parseInt(String.valueOf(txt.charAt(i)));
-                    System.out.println(String.valueOf(txt.charAt(i)));
                     sum += cont_num*waga[i];
                 }
                 int check_nr = sum%11;
@@ -87,7 +86,7 @@ public class WordCheck {
         }
     }
 
-    public boolean MaleIsValid(String txt){
+    public boolean GenderIsValid(String txt){
 
         if(txt == "Male" || txt == "Female") return true;
         else {

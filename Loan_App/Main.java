@@ -44,7 +44,7 @@ public class Main {
         }
         System.out.print("Gender: ");
         gender = scanner.next();
-        while(wordCheck.MaleIsValid(gender) == false) {
+        while(wordCheck.GenderIsValid(gender) == false) {
             System.out.println("Gender: ");
             gender = scanner.next();
         }
